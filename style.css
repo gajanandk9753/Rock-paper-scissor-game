@@ -1,0 +1,108 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container{
+    height: 120vh;
+    width: 100vw;
+    background-color: #903492;
+    text-align: center;
+}
+#gameName{
+    font-size: 35px;
+    font-weight: 900;
+    color: #4B2840;
+    background-color: aqua;
+    border-radius: 5rem;
+    border: 2px solid white;
+}
+
+.images{
+    height: 70vmin;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#rock_img{
+    height: 52vmin;
+    width: 50vmin;
+    background-image: url("Rock.png");
+    background-size: cover;
+}
+#paper_img{
+    height: 50vmin;
+    width: 50vmin;
+    background-size: cover;
+    background-image: url("Paper.png");
+}
+#scissor_img{
+    height: 50vmin;
+    width: 50vmin;
+    background-size: cover;
+    background-image: url("Scissor.png");
+    /* background-color: aqua; */
+}
+#rock_img:hover,#paper_img:hover,#scissor_img:hover{
+    cursor: pointer;
+}
+#rock_img:active, #paper_img:active, #scissor_img:active{
+    transform: scale(1.02);
+}
+#msg1{
+    font-size: 40px;
+}
+#msg2{
+    font-weight: 100;
+    font-size: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#rock_txt{
+    position: relative;
+    bottom: 3.8rem;
+    right: 3.9rem;
+    width: 150px;
+    border-radius: 2rem;
+    font-size: 20px;
+}
+#paper_txt{
+    position: relative;
+    bottom: 3.9rem;
+    left: 1rem;
+    width: 150px;
+    border-radius: 2rem;
+    font-size: 20px;
+}
+#scissor_txt{
+    position: relative;
+    bottom: 3.8rem;
+    left: 6rem;
+    width: 150px;
+    border-radius: 2rem;
+    font-size: 20px;
+}
+
+#result{
+    width: 50vw;
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5rem;
+    border: 2px solid black;
+    position: relative;
+    left: 25%;
+}
+#reset_btn{
+    width: 150px;
+    border-radius: 2rem;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: #8f7a90;
+    display: none;
+}
